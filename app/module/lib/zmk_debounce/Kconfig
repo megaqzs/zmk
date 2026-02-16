@@ -1,3 +1,8 @@
 
 config ZMK_DEBOUNCE
     bool "Debounce Support"
+
+config ZMK_DEBOUNCE_EAGER
+    bool "Eager Debounce Support"
+    depends on ZMK_DEBOUNCE
+    default n
